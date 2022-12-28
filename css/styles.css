@@ -2,10 +2,25 @@
   font-family: sans-serif;
   width: 100%;
   margin: auto;
+  padding: 0;
+}
+
+button {
+  width: 60px;
+  border-radius: 5px;
+  padding: 5px 2px;
+  border: none;
+}
+
+img {
+  border-radius: 5px;
+  height: 200px;
 }
 
 input {
   border-radius: 5px;
+  border-width: 1px;
+  height: 30px;
 }
 
 .purple {
@@ -16,4 +31,35 @@ input {
 
 .light-gray {
   background-color: rgb(240, 240, 240);
+}
+
+.width {
+  max-width: 94%;
+}
+
+.padding-10 {
+  padding: 10px 0;
+}
+
+.padding-5 {
+  padding: 5px 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-textbox {
+  height: 150px;
+}
+
+.img-fill {
+  object-fit: cover;
+}
+
+.button-right {
+  position: relative;
+  left: 80%;
 }
