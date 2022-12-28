@@ -17,35 +17,45 @@
 </head>
 <body>
   <header>
+    <div class="purple-background">
+      <h3 class="white-text width padding-10">Code Journal</h3>
+    </div>
     <div class="container">
     </div>
   </header>
   <main class="container">
     <div data-view="entry-form">
-      <div class="purple">
-        <h3 class="purple width padding-10">Code Journal</h3>
-      </div>
-      <div class="light-gray">
-        <h1 class="width padding-10">New Entry</h1>
-        <div class="width center">
-          <img class="padding-10 img-fill" src="images/placeholder-image-square.jpg" alt="no image, placeholder image">
+      <form>
+        <div>
+          <div class="row">
+            <h1 class="padding-10 column-full">New Entry</h1>
+          </div>
+          <div class="row">
+            <div class="center column-half">
+              <img class="padding-10 img-fill" src="images/placeholder-image-square.jpg" alt="no image, placeholder image">
+            </div>
+            <div class="column-half">
+              <div class="padding-5">
+                <h4 class="padding-5">Title</h4>
+                <input class="center padding-5" type="text">
+              </div>
+              <div class="padding-10">
+                <h4 class="padding-5">Photo URL</h4>
+                <input class="center padding-5" type="text">
+              </div>
+            </div>
+          </div>
+          <div class="padding-5 column-full">
+            <h4 class="padding-5">Notes</h4>
+            <div class="center big-textbox padding-5">
+              <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="row padding-10 column-full button-right">
+            <button class="padding-10 white-text">SAVE</button>
+          </div>
         </div>
-        <div class="padding-5">
-          <h4 class="width padding-5">Title</h4>
-          <input class="width center padding-5" type="text">
-        </div>
-        <div class="padding-10">
-          <h4 class="width padding-5">Photo URL</h4>
-          <input class="width center padding-5" type="text">
-        </div>
-        <div class="padding-5">
-          <h4 class="width padding-5">Notes</h4>
-          <input class="width center big-textbox padding-5" type="text">
-        </div>
-        <div class="width padding-10">
-          <button class="purple padding-10 button-right">SAVE</button>
-        </div>
-      </div>
+      </form>
     </div>
     <div data-view="entries" class="hidden"></div>
   </main>
