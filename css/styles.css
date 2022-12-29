@@ -60,10 +60,6 @@ input {
   padding: 5px;
 }
 
-.big-textbox {
-  height: 150px;
-}
-
 .img-fill {
   object-fit: cover;
 }
@@ -89,10 +85,6 @@ input {
 @media screen and (min-width: 768px) {
   * {
     margin: 0;
-  }
-
-  body {
-    transition: 5s;
   }
 
   form {
