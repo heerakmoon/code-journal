@@ -56,10 +56,8 @@ input {
   padding: 5px 0;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.textbox-padding {
+  padding: 5px 10px;
 }
 
 .big-textbox {

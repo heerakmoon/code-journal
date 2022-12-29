@@ -17,10 +17,12 @@
 </head>
 <body>
   <header>
-    <div class="purple-background">
-      <h3 class="white-text width padding-10">Code Journal</h3>
-    </div>
     <div class="container">
+      <div class="row">
+        <div class="column-full purple-background">
+          <h3 class="white-text width padding-10">Code Journal</h3>
+        </div>
+      </div>
     </div>
   </header>
   <main class="container">
@@ -30,23 +32,23 @@
           <h1 class="padding-10 column-full">New Entry</h1>
         </div>
         <div class="row">
-          <div class="center column-half">
+          <div class="column-half">
             <img id="image" class="padding-10" src="images/placeholder-image-square.jpg" alt="no image, placeholder image">
           </div>
           <div class="column-half">
             <div class="padding-5">
               <h4 class="padding-5">Title</h4>
-              <input class="center padding-5" type="text" required="required">
+              <input class="padding-5 texbox-padding" type="text" required="required">
             </div>
             <div class="padding-10">
               <h4 class="padding-5">Photo URL</h4>
-              <input id="url" class="center padding-5" type="text" required="required">
+              <input id="url" class="padding-5" type="text" required="required">
             </div>
           </div>
         </div>
         <div class="padding-5 column-full">
           <h4 class="padding-5">Notes</h4>
-          <div class="center big-textbox padding-5">
+          <div class="big-textbox padding-5">
             <textarea name="notes" id="notes" cols="30" rows="10" required="required"></textarea>
           </div>
         </div>
