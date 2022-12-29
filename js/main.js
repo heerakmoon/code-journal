@@ -1,4 +1,4 @@
-var form = document.querySelector('form');
+var codeJournalForm = document.querySelector('form');
 var imageElement = document.querySelector('img');
 var inputId = document.querySelector('#url');
 
@@ -6,7 +6,7 @@ function changeSrc(event) {
   imageElement.setAttribute('src', inputId.value);
 }
 
-form.addEventListener('input', changeSrc);
+codeJournalForm.addEventListener('input', changeSrc);
 
 var title = document.querySelector('#title');
 var url = document.querySelector('#url');
@@ -24,7 +24,7 @@ function submitForm(event) {
   data.nextEntryId++;
   data.entries.unshift(newFormObject);
   imgElement.setAttribute('src', 'images/placeholder-image-square.jpg');
-  form.reset();
+  codeJournalForm.reset();
 }
 
-form.addEventListener('submit', submitForm);
+codeJournalForm.addEventListener('submit', submitForm);
