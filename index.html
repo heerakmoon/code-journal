@@ -16,10 +16,10 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="container margin-none">
+  <header class="purple-background">
+    <div class="container">
       <div class="row">
-        <div class="column-full purple-background">
+        <div class="column-full">
           <h3 class="white-text width padding-10">Code Journal</h3>
         </div>
       </div>
@@ -32,30 +32,32 @@
           <h1 class="padding-10 column-full">New Entry</h1>
         </div>
         <div class="row space-between">
-          <div class="column-half no-padding">
+          <div class="column-half">
             <img id="image" class="padding-10 img-fill" src="images/placeholder-image-square.jpg" alt="no image, placeholder image">
           </div>
-          <div class="column-half no-padding">
+          <div class="column-half">
             <div class="padding-5">
-              <h4 class="padding-5">Title</h4>
+              <label for="title">Title</label>
               <input id="title" class="input-padding" type="text" required="required">
             </div>
             <div class="padding-10">
-              <h4 class="padding-5">Photo URL</h4>
+              <label for="url">Photo URL</label>
               <input id="url" class="input-padding" type="text" required="required">
             </div>
           </div>
         </div>
         <div class="row">
           <div class="padding-10 column-full">
-            <h4 class="padding-5">Notes</h4>
+            <label for="notes">Notes</label>
             <div class="padding-5">
               <textarea class="input-padding" name="notes" id="notes" cols="30" rows="10" required="required"></textarea>
             </div>
           </div>
         </div>
-        <div class="row padding-10 column-full button-right">
-          <button class="padding-10 white-text">SAVE</button>
+        <div class="row">
+          <div class="column-full padding-10 button-right">
+            <button class="padding-10 white-text">SAVE</button>
+          </div>
         </div>
       </form>
     </div>
