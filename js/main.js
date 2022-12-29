@@ -11,6 +11,7 @@ form.addEventListener('input', changeSrc);
 var title = document.querySelector('#title');
 var url = document.querySelector('#url');
 var notes = document.querySelector('#notes');
+var imgElement = document.querySelector('img');
 
 function submitForm(event) {
   event.preventDefault();
@@ -22,6 +23,7 @@ function submitForm(event) {
   newFormObject.entryId = data.nextEntryId;
   data.nextEntryId++;
   data.entries.unshift(newFormObject);
+  imgElement.setAttribute('src', 'images/placeholder-image-square.jpg');
 }
 
 form.addEventListener('submit', submitForm);
