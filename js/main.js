@@ -24,6 +24,7 @@ function submitForm(event) {
   data.nextEntryId++;
   data.entries.unshift(newFormObject);
   imgElement.setAttribute('src', 'images/placeholder-image-square.jpg');
+  form.reset();
 }
 
 form.addEventListener('submit', submitForm);
