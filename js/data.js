@@ -7,10 +7,12 @@ var data = {
   nextEntryId: 1
 };
 
-var dataJSON = JSON.stringify(data);
-localStorage.setItem('code-journal-local-storage', dataJSON);
+function stringifyData(event) {
+  var dataJSON = JSON.stringify(data);
+  localStorage.setItem('code-journal-local-storage', dataJSON);
+}
 
-window.addEventListener('beforeunload', event);
+window.addEventListener('beforeunload', stringifyData);
 
 var existingDataJSON = localStorage.getItem('code-journal-local-storage');
 
