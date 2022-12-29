@@ -79,6 +79,10 @@ input {
     margin: 0;
   }
 
+  body {
+    transition: 5s;
+  }
+
   form {
     width: 900px;
   }
