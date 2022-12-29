@@ -17,7 +17,7 @@
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container margin-none">
       <div class="row">
         <div class="column-full purple-background">
           <h3 class="white-text width padding-10">Code Journal</h3>
@@ -31,25 +31,25 @@
         <div class="row">
           <h1 class="padding-10 column-full">New Entry</h1>
         </div>
-        <div class="row">
-          <div class="column-half">
+        <div class="row space-between">
+          <div class="column-half no-padding">
             <img id="image" class="padding-10 img-fill" src="images/placeholder-image-square.jpg" alt="no image, placeholder image">
           </div>
-          <div class="column-half">
+          <div class="column-half no-padding">
             <div class="padding-5">
               <h4 class="padding-5">Title</h4>
-              <input id="title" class="padding-5 texbox-padding" type="text" required="required">
+              <input id="title" class="input-padding" type="text" required="required">
             </div>
             <div class="padding-10">
               <h4 class="padding-5">Photo URL</h4>
-              <input id="url" class="padding-5" type="text" required="required">
+              <input id="url" class="input-padding" type="text" required="required">
             </div>
           </div>
         </div>
-        <div class="padding-5 column-full">
+        <div class="padding-10 column-full">
           <h4 class="padding-5">Notes</h4>
           <div class="big-textbox padding-5">
-            <textarea name="notes" id="notes" cols="30" rows="10" required="required"></textarea>
+            <textarea class="input-padding" name="notes" id="notes" cols="30" rows="10" required="required"></textarea>
           </div>
         </div>
         <div class="row padding-10 column-full button-right">

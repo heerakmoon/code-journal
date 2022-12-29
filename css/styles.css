@@ -56,8 +56,8 @@ input {
   padding: 5px 0;
 }
 
-.textbox-padding {
-  padding: 5px 10px;
+.input-padding {
+  padding: 5px;
 }
 
 .big-textbox {
@@ -70,6 +70,20 @@ input {
 
 .button-right {
   flex-direction: row-reverse;
+}
+
+.margin-none {
+  margin: 0;
+  max-width: 100%;
+}
+
+.no-padding {
+  padding: 0;
+  width: 440px;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
