@@ -7,3 +7,11 @@ function changeSrc(event) {
 }
 
 imageInputListener.addEventListener('input', changeSrc);
+
+var form = document.querySelector('form');
+
+function submitForm(event) {
+  event.preventDefault();
+}
+
+form.addEventListener('submit', submitForm);
