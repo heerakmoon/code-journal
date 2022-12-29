@@ -8,10 +8,20 @@ function changeSrc(event) {
 
 imageInputListener.addEventListener('input', changeSrc);
 
-var form = document.querySelector('form');
+// var form = document.querySelector('form');
+// var title = document.querySelector('#title');
+// var url = document.querySelector('#url');
+// var notes = document.querySelector('#notes');
 
-function submitForm(event) {
-  event.preventDefault();
-}
+// function submitForm(event) {
+//   event.preventDefault();
+//   var formObject = {
+//     formTitle: title,
+//     formUrl: url.value,
+//     formNotes: notes.value
+//   };
+//   var formObject.entryId = nextEntryId;
+//   console.log(formTitle);
+// }
 
-form.addEventListener('submit', submitForm);
+// form.addEventListener('submit', submitForm);
