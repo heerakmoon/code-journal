@@ -21,6 +21,7 @@ function submitForm(event) {
   };
   newFormObject.entryId = data.nextEntryId;
   data.nextEntryId++;
+  data.entries.unshift(newFormObject);
 }
 
 form.addEventListener('submit', submitForm);
