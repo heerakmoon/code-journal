@@ -16,12 +16,59 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
+  <header class="purple-background">
     <div class="container">
+      <div class="row">
+        <div class="column-full">
+          <h3 class="white-text padding-10">Code Journal</h3>
+        </div>
+      </div>
     </div>
   </header>
   <main class="container">
-    <div data-view="entry-form"></div>
+    <div data-view="entry-form">
+      <form class="form">
+        <div class="row margin-top-bot-10">
+          <h1 class="column-full">New Entry</h1>
+        </div>
+        <div class="row margin-top-bot-10">
+          <div class="column-half">
+            <img id="image" class="img-fill" src="images/placeholder-image-square.jpg" alt="no image, placeholder image">
+          </div>
+          <div class="column-half">
+            <div>
+              <div class="padding-5">
+                <label class="width-100-percent" for="title">Title</label>
+              </div>
+              <div class="padding-5">
+                <input id="title" class="input-padding width-100-percent" type="text" required="required">
+              </div>
+            </div>
+            <div>
+              <div class="padding-5">
+                <label for="url">Photo URL</label>
+              </div>
+              <div class="padding-5">
+                <input id="url" class="input-padding width-100-percent" type="text" required="required">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row margin-top-bot-10">
+          <div class="column-full">
+            <label for="notes">Notes</label>
+            <div class="padding-5">
+              <textarea class="input-padding width-100-percent" id="notes" cols="30" rows="10" required="required"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row button-right">
+          <div class="column-full">
+            <button class="white-text">SAVE</button>
+          </div>
+        </div>
+      </form>
+    </div>
     <div data-view="entries" class="hidden"></div>
   </main>
   <script src="js/data.js"></script>
