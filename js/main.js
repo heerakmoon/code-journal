@@ -33,4 +33,10 @@ function renderEntry(entry) {
   $textDesktopPercWidth.appendChild($p);
 }
 
-renderEntry();
+document.addEventListener('DOMContentLoaded', function () {
+  for (var i = 0; i < data.entries.length; i++) {
+    var newEntryDOM = renderEntry(data.entries[i]);
+    var $ul = this.querySelector('ul');
+    $ul.appendChild(newEntryDOM);
+  }
+});
