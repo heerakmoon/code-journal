@@ -75,3 +75,13 @@ document.addEventListener('DOMContentLoaded', function () {
     $ul.appendChild(entry);
   }
 });
+
+// function toggleNoEntries() {
+//   var $noEntries = document.querySelector('#no-entries');
+//   if (data.entries.length === 0) {
+//     $noEntries.className = 'text-center margin-top-bot-10';
+//   } else {
+//     $noEntries.className = 'text-center margin-top-bot-10 hidden';
+//   }
+//   return $noEntries;
+// }
