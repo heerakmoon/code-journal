@@ -26,6 +26,16 @@ ul {
   margin: 0;
 }
 
+input {
+  border-radius: 5px;
+  border-width: 1px;
+  height: 30px;
+}
+
+label {
+  font-weight: bold;
+}
+
 .purple-background {
   background-color: rgb(82, 23, 109);
 }
