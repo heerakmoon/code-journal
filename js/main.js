@@ -85,3 +85,18 @@ document.addEventListener('DOMContentLoaded', function () {
 //   }
 //   return $noEntries;
 // }
+
+var $entries = document.querySelector('#entries');
+var $entryForm = document.querySelector('#entry-form');
+$entries.setAttribute('class', '');
+$entryForm.setAttribute('class', '');
+
+// function viewSwap(viewName) {
+//   data.view = viewName;
+//   if (viewName === 'entries') {
+//     $entries.className = '';
+//     $entryForm.className = 'hidden';
+//   } else if (viewName === 'entry-form') {
+//     $entries.className = 'hidden';
+//   }
+// }
