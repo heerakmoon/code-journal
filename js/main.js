@@ -24,13 +24,13 @@ function submitForm(event) {
   var entryDomTree = renderEntry(newFormObject);
   $ul.appendChild(entryDomTree);
   viewSwap(data.view);
-  toggleNoEntries();
 
   newFormObject.entryId = data.nextEntryId;
   data.nextEntryId++;
   data.entries.unshift(newFormObject);
   imgElement.setAttribute('src', 'images/placeholder-image-square.jpg');
   codeJournalForm.reset();
+  toggleNoEntries();
 }
 
 codeJournalForm.addEventListener('submit', submitForm);
