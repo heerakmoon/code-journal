@@ -100,6 +100,14 @@ label {
   border-radius: 5px;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
+.purple {
+  color: rgb(82, 23, 109);
+}
+
 @media screen and (min-width: 768px) {
   * {
     margin: 0;

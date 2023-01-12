@@ -54,9 +54,15 @@ function renderEntry(entry) {
   var $textDesktopEntryPercWidth = document.createElement('div');
   $textDesktopEntryPercWidth.setAttribute('class', 'desktop-entry-perc-width');
 
+  var $titleAndIconDiv = document.createElement('div');
+  $titleAndIconDiv.setAttribute('class', 'flex space-between');
+
   var $headerThree = document.createElement('h3');
   var $headerThreeText = document.createTextNode(entry.formTitle);
   $headerThree.appendChild($headerThreeText);
+
+  var $fontAwesomePencil = document.createElement('i');
+  $fontAwesomePencil.setAttribute('class', 'fa-solid fa-pen purple');
 
   var $p = document.createElement('p');
   var $pText = document.createTextNode(entry.formNotes);
@@ -67,7 +73,9 @@ function renderEntry(entry) {
   $desktopEntrySpaceBetween.appendChild($imageDesktopEntryPercWidth);
   $imageDesktopEntryPercWidth.appendChild($img);
   $desktopEntrySpaceBetween.appendChild($textDesktopEntryPercWidth);
-  $textDesktopEntryPercWidth.appendChild($headerThree);
+  $textDesktopEntryPercWidth.appendChild($titleAndIconDiv);
+  $titleAndIconDiv.appendChild($headerThree);
+  $titleAndIconDiv.appendChild($fontAwesomePencil);
   $textDesktopEntryPercWidth.appendChild($p);
 
   return $li;
