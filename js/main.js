@@ -102,10 +102,14 @@ function viewSwap(viewName) {
   }
 }
 
-var $entriesAnchor = document.querySelector('a');
+var $body = document.querySelector('body');
+var $navbarEntries = document.querySelector('#navbar-entries');
+var $newAnchor = document.querySelector('#new-anchor');
 
-$entriesAnchor.addEventListener('click', function () {
-  if (event.target.matches('#navbar-entries')) {
+$body.addEventListener('click', function () {
+  if (event.target === $navbarEntries) {
     viewSwap('entries');
+  } else if (event.target === $newAnchor) {
+    viewSwap('entry-form');
   }
 });
