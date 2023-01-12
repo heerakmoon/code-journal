@@ -20,6 +20,12 @@ function submitForm(event) {
     formUrl: url.value,
     formNotes: notes.value
   };
+
+  var entryDomTree = renderEntry(newFormObject);
+  $ul.appendChild(entryDomTree);
+  viewSwap(data.view);
+  toggleNoEntries();
+
   newFormObject.entryId = data.nextEntryId;
   data.nextEntryId++;
   data.entries.unshift(newFormObject);
@@ -76,19 +82,18 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// function toggleNoEntries() {
-//   var $noEntries = document.querySelector('#no-entries');
-//   if (data.entries.length === 0) {
-//     $noEntries.className = 'text-center margin-top-bot-10';
-//   } else {
-//     $noEntries.className = 'text-center margin-top-bot-10 hidden';
-//   }
-//   return $noEntries;
-// }
+var $noEntries = document.querySelector('#no-entries');
+
+function toggleNoEntries() {
+  if (data.entries.length === 0) {
+    $noEntries.className = '';
+  } else {
+    $noEntries.className = 'hidden';
+  }
+}
 
 var $entries = document.querySelector('#entries');
 var $entryForm = document.querySelector('#entry-form');
-$entries.setAttribute('class', '.hidden');
 $entryForm.setAttribute('class', '');
 
 function viewSwap(viewName) {
