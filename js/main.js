@@ -37,6 +37,7 @@ codeJournalForm.addEventListener('submit', submitForm);
 
 function renderEntry(entry) {
   var $li = document.createElement('li');
+  $li.setAttribute('id', entry.entryId);
   var $row = document.createElement('div');
   $row.setAttribute('class', 'row');
 
