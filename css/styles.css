@@ -78,6 +78,10 @@ label {
   align-items: center;
 }
 
+.anchor-center {
+  padding: 20px 0;
+}
+
 .text-center {
   text-align: center;
 }
@@ -133,5 +137,9 @@ label {
   .desktop-entry-space-between {
     display: flex;
     justify-content: space-between;
+  }
+
+  .anchor-center {
+    padding: 2px 0;
   }
 }

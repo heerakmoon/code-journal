@@ -41,7 +41,7 @@ function renderEntry(entry) {
   $row.setAttribute('class', 'row');
 
   var $desktopEntrySpaceBetween = document.createElement('div');
-  $desktopEntrySpaceBetween.setAttribute('class', 'desktop-entry-space-between');
+  $desktopEntrySpaceBetween.setAttribute('class', 'desktop-entry-space-between column-full');
 
   var $imageDesktopEntryPercWidth = document.createElement('div');
   $imageDesktopEntryPercWidth.setAttribute('class', 'desktop-entry-perc-width');
@@ -80,15 +80,15 @@ document.addEventListener('DOMContentLoaded', function () {
     var entry = renderEntry(data.entries[i]);
     $ul.appendChild(entry);
   }
+  viewSwap(entry.view);
+  toggleNoEntries();
 });
 
-var $noEntries = document.querySelector('#no-entries');
+var $noEntriesP = document.querySelector('#no-entries');
 
 function toggleNoEntries() {
-  if (data.entries.length === 0) {
-    $noEntries.className = '';
-  } else {
-    $noEntries.className = 'hidden';
+  if (data.entries.length > 0) {
+    $noEntriesP.className = 'hidden';
   }
 }
 
