@@ -102,10 +102,10 @@ function viewSwap(viewName) {
   }
 }
 
-var $entriesAnchor = document.querySelector('#navbar-entries');
+var $entriesAnchor = document.querySelector('a');
 
 $entriesAnchor.addEventListener('click', function () {
-  if (event.target) {
+  if (event.target.matches('#navbar-entries')) {
     viewSwap('entries');
   }
 });
