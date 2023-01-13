@@ -127,3 +127,12 @@ $body.addEventListener('click', function () {
     viewSwap('entry-form');
   }
 });
+
+// $ul.addEventListener('click', function () {
+//   viewSwap();
+
+//   for (var i = 0; i < data.entries.length; i++) {
+//     if (data.entries)
+//   }
+
+// });
