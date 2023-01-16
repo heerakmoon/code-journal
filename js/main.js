@@ -38,6 +38,7 @@ codeJournalForm.addEventListener('submit', submitForm);
 function renderEntry(entry) {
   var $li = document.createElement('li');
   $li.setAttribute('id', entry.entryId);
+
   var $row = document.createElement('div');
   $row.setAttribute('class', 'row');
 
@@ -128,11 +129,20 @@ $body.addEventListener('click', function () {
   }
 });
 
-// $ul.addEventListener('click', function () {
-//   viewSwap();
+var $h1 = document.querySelector('#new-entry');
 
-//   for (var i = 0; i < data.entries.length; i++) {
-//     if (data.entries)
-//   }
+$ul.addEventListener('click', function () {
+  if (event.target.nodeName === 'I') {
+    viewSwap('entry-form');
+  }
 
-// });
+  var dataEntryIdNum = event.target.closest('li').getAttribute('id') * 1;
+
+  for (var i = 0; i < data.entries.length; i++) {
+    if (dataEntryIdNum === data.entries[i].entryId) {
+      data.editing = data.entries[i];
+    }
+  }
+  renderEntry(data.editing);
+  $h1.textContent = 'Edit Entry';
+});
