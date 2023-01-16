@@ -141,8 +141,12 @@ $ul.addEventListener('click', function () {
   for (var i = 0; i < data.entries.length; i++) {
     if (dataEntryIdNum === data.entries[i].entryId) {
       data.editing = data.entries[i];
+      codeJournalForm.title.value = data.entries[i].formTitle;
+      codeJournalForm.url.value = data.entries[i].formUrl;
+      codeJournalForm.notes.value = data.entries[i].formNotes;
+      codeJournalForm.entryId = data.entries[i].entryId;
+      changeSrc(codeJournalForm.url.value);
+      $h1.textContent = 'Edit Entry';
     }
   }
-  renderEntry(data.editing);
-  $h1.textContent = 'Edit Entry';
 });
