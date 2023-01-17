@@ -15,6 +15,17 @@ var imgElement = document.querySelector('img');
 
 function submitForm(event) {
   event.preventDefault();
+  // if (data.editing !== null) {
+  //   entryId = data.editing.entryId;
+  //   title.value = data.editing.title;
+  //   url.value = data.editing.url;
+  //   notes.value = data.editing.notes;
+
+  //   data.entries.splice(entryId, 1, );
+  //   renderEntry();
+  //   $h1.textContent = 'New Entry';
+  //   data.editing = null;
+  // }
   var newFormObject = {
     formTitle: title.value,
     formUrl: url.value,
@@ -27,6 +38,7 @@ function submitForm(event) {
 
   newFormObject.entryId = data.nextEntryId;
   data.nextEntryId++;
+
   data.entries.unshift(newFormObject);
   imgElement.setAttribute('src', 'images/placeholder-image-square.jpg');
   codeJournalForm.reset();
